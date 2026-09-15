@@ -27,6 +27,8 @@
 
 ⚠️ Extrato dos documentos da conferência
 
+⚠️ Gerar etiquetas adesivas com QR Code
+
 ### Tecnologias utilizadas
 Banco de dados: Supabase (SQL)
 
