@@ -9,18 +9,27 @@
 
 ### Funcionalidades Aplicadas
 ✅ Front-End One-Page WEB
+
 ✅ Banco de Dados Online
+
 ✅ Upload de arquivo .csv
+
 ✅ Leitura de QR Code
 
 ### Funcionalidades em Desenvolvimento
 ⚠️ Refatorar em Multi Page com CSS e JS separados também
+
 ⚠️ Autenticação 
+
 ⚠️ Criação de diferentes conferências para comparação entre anos
+
 ⚠️ Colocar foto do bem patrimonial
+
 ⚠️ Extrato dos documentos da conferência
 
 ### Tecnologias utilizadas
 Banco de dados: Supabase (SQL)
+
 FrontEnd: HTML + CSS + JS (one-page)
+
 VibeCoding: Gemini
