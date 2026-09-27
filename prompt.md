@@ -26,7 +26,7 @@ Nome da Conferência
 Descrição da Conferência
 Situação
 Data de Criação
-Data de Modifição
+Data de Modificação
 Criado Por
 Alterado Por
 
@@ -38,6 +38,7 @@ BMP
 Descrição
 Situação
 Detalhes
+Documento
 Foto
 Data de Criação
 Data de Modificação

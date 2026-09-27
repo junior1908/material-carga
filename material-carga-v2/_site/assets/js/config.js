@@ -1,0 +1,6 @@
+// config.js
+window.APP_CONFIG = {
+    SUPABASE_URL: 'https://fjyptnizrewasterynhu.supabase.co',
+    SUPABASE_ANON_KEY: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImZqeXB0bml6cmV3YXN0ZXJ5bmh1Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODkwOTQ0NTEsImV4cCI6MjEwNDY3MDQ1MX0.6ugJWkqM0rNInfMSz_qrAs8Xj7IRT6VzFG-_b2F3peo'
+};
+

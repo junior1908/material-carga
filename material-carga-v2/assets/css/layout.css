@@ -1,0 +1,164 @@
+/* assets/css/layout.css */
+:root {
+    --sidebar-width-normal: 260px;
+    --sidebar-width-narrow: 70px;
+    --primary-color: #4338ca;
+    --primary-hover: #3730a3;
+    --sidebar-bg: #1e1b4b;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f1f5f9;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: row;
+}
+
+/* ===================================================
+   1. REGRA BASE DA SIDEBAR
+   =================================================== */
+#sidebarWrapper {
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1030;
+    background-color: var(--sidebar-bg) !important;
+    overflow-x: hidden;
+    overflow-y: auto;
+    transition: width 0.25s ease-in-out, min-width 0.25s ease-in-out, transform 0.25s ease-in-out;
+}
+
+#page-content-wrapper {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    background-color: #f1f5f9;
+    transition: margin-left 0.25s ease-in-out, width 0.25s ease-in-out;
+}
+
+/* ===================================================
+   2. TELA GRANDE / DESKTOP (Largura >= 992px)
+   =================================================== */
+@media (min-width: 992px) {
+    /* Estado Padrão Desktop: Expandido (260px) */
+    #sidebarWrapper {
+        width: var(--sidebar-width-normal);
+        min-width: var(--sidebar-width-normal);
+        transform: translateX(0);
+    }
+
+    #page-content-wrapper {
+        margin-left: var(--sidebar-width-normal);
+        width: calc(100% - var(--sidebar-width-normal));
+    }
+
+    /* Desktop Contraído (Ao clicar no botão ☰) */
+    body.narrow-desktop #sidebarWrapper {
+        width: var(--sidebar-width-narrow) !important;
+        min-width: var(--sidebar-width-narrow) !important;
+    }
+
+    body.narrow-desktop #page-content-wrapper {
+        margin-left: var(--sidebar-width-narrow) !important;
+        width: calc(100% - var(--sidebar-width-narrow)) !important;
+    }
+
+    body.narrow-desktop .sidebar-label {
+        display: none !important;
+    }
+
+    body.narrow-desktop .nav-link-custom {
+        justify-content: center;
+        padding: 0.75rem 0;
+    }
+
+    body.narrow-desktop .sidebar-brand {
+        justify-content: center;
+    }
+}
+
+/* ===================================================
+   3. TELA PEQUENA / MOBILE (Largura < 992px)
+   =================================================== */
+@media (max-width: 991.98px) {
+    /* Estado Padrão Mobile: Estreito com ícones (70px) */
+    #sidebarWrapper {
+        width: var(--sidebar-width-narrow) !important;
+        min-width: var(--sidebar-width-narrow) !important;
+        transform: translateX(0);
+    }
+
+    #page-content-wrapper {
+        margin-left: var(--sidebar-width-narrow) !important;
+        width: calc(100% - var(--sidebar-width-narrow)) !important;
+    }
+
+    .sidebar-label {
+        display: none !important;
+    }
+
+    .nav-link-custom {
+        justify-content: center;
+        padding: 0.75rem 0;
+    }
+
+    .sidebar-brand {
+        justify-content: center;
+    }
+
+    /* Mobile Oculto (Ao clicar no botão ☰) */
+    body.hide-mobile #sidebarWrapper {
+        transform: translateX(-100%) !important;
+    }
+
+    body.hide-mobile #page-content-wrapper {
+        margin-left: 0 !important;
+        width: 100% !important;
+    }
+}
+
+/* ===================================================
+   4. COMPONENTES VISUAIS DOS LINKS
+   =================================================== */
+.nav-link-custom {
+    color: #cbd5e1 !important;
+    font-size: 0.9rem;
+    font-weight: 500;
+    padding: 0.75rem 1rem;
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    transition: background-color 0.2s ease, color 0.2s ease;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.nav-link-custom:hover, 
+.nav-link-custom.active {
+    color: #ffffff !important;
+    background-color: var(--primary-color) !important;
+}
+
+.sidebar-icon {
+    font-size: 1.25rem;
+    line-height: 1;
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.btn-primary:hover {
+    background-color: var(--primary-hover);
+    border-color: var(--primary-hover);
+}
