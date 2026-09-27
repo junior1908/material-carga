@@ -1,2 +1,9 @@
-apoio/
-material-carga-v2/
+# Ignora a si mesmo
+./.gitignore
+
+# Ignora arquivo de configuração
+./config.js
+
+# Ignora pastas de apoio e próxima versão
+./apoio/
+./material-carga-v2/
