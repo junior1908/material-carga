@@ -8,7 +8,7 @@
 **Solução:** Quando chegar o período de conferência, pretendo baixar o arquivo csv, importá-lo em um site, e a partir daí fazer a conferência de maneira rápida e prática, pois deste modo não precisarei ficar andando com algumas folhas de papel na mão, nem ter que ficar procurando o número do patrimônio.
 
 ### Funcionalidades Aplicadas
-✅ Front-End One-Page WEB
+✅  Autenticação 
 
 ✅ Banco de Dados Online
 
@@ -22,8 +22,6 @@
 
 ### Funcionalidades em Desenvolvimento
 ⚠️ Refatorar em Multi Page com CSS e JS separados também
-
-⚠️ Autenticação 
 
 ⚠️ Criação de diferentes conferências para comparação entre anos
 

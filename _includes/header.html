@@ -1,0 +1,44 @@
+<!-- _includes/header.html -->
+<header class="navbar navbar-expand bg-white border-bottom shadow-sm px-3 sticky-top">
+    <div class="container-fluid p-0 d-flex justify-content-between align-items-center">
+        
+        <!-- Esquerda: Botão de controle da barra lateral + Título da Página -->
+        <div class="d-flex align-items-center gap-2">
+            <button class="btn btn-outline-secondary btn-sm d-flex align-items-center justify-content-center" 
+                    id="sidebarToggle" 
+                    type="button" 
+                    title="Alternar Menu Lateral"
+                    style="width: 36px; height: 36px;">
+                <span class="fs-6">☰</span>
+            </button>
+            <h5 class="mb-0 fw-semibold text-dark text-truncate">{{ page.title }}</h5>
+        </div>
+
+        <!-- Direita: Menu Suspenso (Dropdown) do Usuário -->
+        <div class="dropdown">
+            <button class="btn btn-light dropdown-toggle d-flex align-items-center gap-2 py-1 px-2 border" 
+                    type="button" 
+                    id="userDropdown" 
+                    data-bs-toggle="dropdown" 
+                    aria-expanded="false">
+                <span class="rounded-circle bg-primary text-white d-inline-flex align-items-center justify-content-center" 
+                      style="width: 28px; height: 28px; font-size: 0.8rem;">👤</span>
+                <span id="navbarUserName" class="text-dark small fw-medium">Verificando...</span>
+            </button>
+            <ul class="dropdown-menu dropdown-menu-end shadow-sm" aria-labelledby="userDropdown">
+                <li>
+                    <a class="dropdown-item d-flex align-items-center gap-2 small" href="{{ '/perfil.html' | relative_url }}">
+                        <span>⚙️</span> <span>Meu Perfil</span>
+                    </a>
+                </li>
+                <li><hr class="dropdown-divider"></li>
+                <li>
+                    <button class="dropdown-item d-flex align-items-center gap-2 small text-danger" type="button" id="btnLogout">
+                        <span>🚪</span> <span>Encerrar Sessão</span>
+                    </button>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+</header>
