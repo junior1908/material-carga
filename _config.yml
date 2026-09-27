@@ -1,7 +1,7 @@
 # _config.yml
 title: Conferência BMP
 description: Sistema Web de Controle e Conferência de Material Carga
-baseurl: ""       # Se for uma página de repositório, coloque: "/nome-do-repositorio"
+baseurl: "/material-carga"       # Se for uma página de repositório, coloque: "/nome-do-repositorio"
 url: ""
 
 # Ignora pastas ou dependências fora do escopo do Jekyll
