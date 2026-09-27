@@ -16,16 +16,16 @@
 
 ✅ Leitura de QR Code
 
+✅ Colocar foto do bem patrimonial
+
+✅ Extrato dos documentos da conferência
+
 ### Funcionalidades em Desenvolvimento
 ⚠️ Refatorar em Multi Page com CSS e JS separados também
 
 ⚠️ Autenticação 
 
 ⚠️ Criação de diferentes conferências para comparação entre anos
-
-⚠️ Colocar foto do bem patrimonial
-
-⚠️ Extrato dos documentos da conferência
 
 ⚠️ Gerar etiquetas adesivas com QR Code
 
